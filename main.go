@@ -120,8 +120,7 @@ func markundone(no int) {
 }
 
 func delete(no int) {
-	s := make([][]string, 0, 4)
-	s = data[:no-1]
+	s := data[:no-1]
 	if len(data[no:]) > 0 {
 		t := data[no:]
 		s = append(s, t...)
